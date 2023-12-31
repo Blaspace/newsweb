@@ -16,7 +16,8 @@ export const NewsProvider = ({ children }) => {
   const [world, setWorld] = useState([]);
   const [singleNews, setSingleNews] = useState([]);
 
-  const url = "http://localhost:8000";
+  //const url = "http://localhost:8000";
+  const url = "https://news-yrsc.onrender.com";
 
   return (
     <newsContext.Provider
