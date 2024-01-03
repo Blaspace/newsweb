@@ -185,8 +185,7 @@ body {
 }
 .single-con p {
   padding: 5px;
-  font-weight: 550;
-  width: 80%;
+  width: 90%;
   text-align: justify;
 }
 @media (min-width: 780px) {
