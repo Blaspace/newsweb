@@ -12,7 +12,7 @@ function Home() {
   useEffect(() => {
     if (!home?.length) {
       setLoading(true);
-      fetch(url)
+      fetch(`${url}/home`)
         .then((res) => res.json())
         .then((data) => setHome(data))
         .catch((err) => console.log(err))
