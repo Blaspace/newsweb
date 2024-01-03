@@ -59,11 +59,12 @@ body {
   color: #fafafa;
   top: 0;
   position: sticky;
+  padding-bottom: 5px;
 }
 .drop-down {
   position: absolute;
   background-color: #000;
-  top: 49px;
+  top: 40px;
   left: 0;
   height: 0;
   transition: height 500ms;
@@ -84,13 +85,10 @@ body {
 }
 .nav-con {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 100%;
   max-width: 1200px;
   position: relative;
-}
-.nav-con h2 {
-  justify-self: flex-end;
 }
 .nav-con ul {
   display: flex;
@@ -102,6 +100,10 @@ body {
   font-weight: 600;
   font-size: 17px;
   display: none;
+}
+.nav-con {
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .nav-con h3 {
   display: block;
@@ -154,7 +156,7 @@ body {
 .all-news-con p {
   font-weight: 600;
   font-size: 20px;
-  padding: 5px;
+  margin-top: 5px;
   cursor: pointer;
 }
 .all-news-con p:hover {
@@ -172,6 +174,9 @@ body {
   width: 100%;
   max-width: 1200px;
   margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .single-con section {
   width: 90%;
@@ -185,7 +190,7 @@ body {
 }
 .single-con p {
   padding: 5px;
-  width: 90%;
+  width: 95%;
   text-align: justify;
 }
 @media (min-width: 780px) {
@@ -207,8 +212,8 @@ body {
   .nav-con h3 {
     display: none;
   }
-  .nav-con h2 {
-    justify-self: flex-start;
+  .nav-con {
+    justify-content: space-between;
   }
   .all-news-con {
     flex-direction: row;
