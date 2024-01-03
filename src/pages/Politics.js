@@ -28,7 +28,7 @@ function Politics() {
   return (
     <div>
       <Header />
-      <Nav />
+      <Nav head={"Politics"} />
       {loading ? <h1>Getting News...</h1> : <AllNews imageNews={imageNews} />}
     </div>
   );

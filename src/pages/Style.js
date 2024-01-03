@@ -28,7 +28,7 @@ function Style() {
   return (
     <div>
       <Header />
-      <Nav />
+      <Nav head={"Style"} />
       {loading ? <h1>Getting News...</h1> : <AllNews imageNews={imageNews} />}
     </div>
   );

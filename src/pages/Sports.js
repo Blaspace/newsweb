@@ -28,7 +28,7 @@ function Sports() {
   return (
     <div>
       <Header />
-      <Nav />
+      <Nav head={"Sports"} />
       {loading ? <h1>Getting News...</h1> : <AllNews imageNews={imageNews} />}
     </div>
   );

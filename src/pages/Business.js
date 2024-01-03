@@ -28,7 +28,7 @@ function Business() {
   return (
     <div>
       <Header />
-      <Nav />
+      <Nav head={"Business"} />
       {loading ? <h1>Getting News...</h1> : <AllNews imageNews={imageNews} />}
     </div>
   );

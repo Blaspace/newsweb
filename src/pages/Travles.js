@@ -28,9 +28,8 @@ function Travles() {
   return (
     <div>
       <Header />
-      <Nav />
+      <Nav head={"Travles"} />
       <br />
-      <h1>Travles</h1>
       {loading ? <h1>Getting News...</h1> : <AllNews imageNews={imageNews} />}
     </div>
   );

@@ -28,7 +28,7 @@ function Home() {
   return (
     <div>
       <Header />
-      <Nav />
+      <Nav head={"Home"} />
       {loading ? <h1>Getting News...</h1> : <AllNews imageNews={imageNews} />}
       <br />
       <br />

@@ -28,9 +28,8 @@ function World() {
   return (
     <div>
       <Header />
-      <Nav />
+      <Nav head={"World"} />
       <br />
-      <h1>World</h1>
       <br />
       {loading ? <h1>Getting News...</h1> : <AllNews imageNews={imageNews} />}
     </div>

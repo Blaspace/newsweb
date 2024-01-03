@@ -7,26 +7,15 @@ import Nav from "../component/Nav";
 function NewsDetails() {
   const {
     home,
-    setHome,
     url,
     world,
-    setWorld,
     travles,
-    setTravles,
     style,
-    setStyle,
     sports,
-    setSports,
     politics,
-    setPolitics,
-    imageNews,
-    setImageNews,
     business,
-    setBusiness,
     health,
-    setHealth,
     opinion,
-    setOpinion,
     singleNews,
     setSingleNews,
   } = useContext(newsContext);
@@ -88,7 +77,7 @@ function NewsDetails() {
   return (
     <>
       <Header />
-      <Nav />
+      <Nav head={params.class} />
       <div className="single">
         <div className="single-con">
           {loading ? (

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function Nav() {
+function Nav({ head }) {
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
   const handleGetNews = (e) => {
@@ -22,6 +22,7 @@ function Nav() {
   return (
     <div className="nav">
       <div className="nav-con">
+        <h2>{head}</h2>
         <h3 onClick={handleToggle}>
           <b>{!toggle ? <>&#x2630;</> : <>&times;</>}</b>
         </h3>
