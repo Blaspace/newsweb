@@ -89,6 +89,9 @@ body {
   max-width: 1200px;
   position: relative;
 }
+.nav-con h2 {
+  justify-self: flex-end;
+}
 .nav-con ul {
   display: flex;
   list-style: none;
@@ -204,6 +207,9 @@ body {
   }
   .nav-con h3 {
     display: none;
+  }
+  .nav-con h2 {
+    justify-self: flex-start;
   }
   .all-news-con {
     flex-direction: row;
