@@ -3,6 +3,7 @@ import Header from "../component/Header";
 import Nav from "../component/Nav";
 import AllNews from "../component/AllNews";
 import newsContext from "../context/NewsContext";
+import { LuLoader2 } from "react-icons/lu";
 
 function Politics() {
   const { url, politics, setPolitics } = useContext(newsContext);
@@ -29,7 +30,13 @@ function Politics() {
     <div>
       <Header />
       <Nav head={"Politics"} />
-      {loading ? <h1>Getting News...</h1> : <AllNews imageNews={imageNews} />}
+      {loading ? (
+        <span className="load">
+          <LuLoader2 size={50} className="loader" />
+        </span>
+      ) : (
+        <AllNews imageNews={imageNews} />
+      )}
     </div>
   );
 }

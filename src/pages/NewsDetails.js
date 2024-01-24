@@ -3,6 +3,7 @@ import newsContext from "../context/NewsContext";
 import { useParams } from "react-router-dom";
 import Header from "../component/Header";
 import Nav from "../component/Nav";
+import { LuLoader2 } from "react-icons/lu";
 
 function NewsDetails() {
   const {
@@ -81,7 +82,9 @@ function NewsDetails() {
       <div className="single">
         <div className="single-con">
           {loading ? (
-            <h1>Getting News...</h1>
+            <span className="load">
+              <LuLoader2 size={50} className="loader" />
+            </span>
           ) : (
             <>
               <h1>{singleNews?.heading}</h1>

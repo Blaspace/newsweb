@@ -3,6 +3,7 @@ import Header from "../component/Header";
 import Nav from "../component/Nav";
 import AllNews from "../component/AllNews";
 import newsContext from "../context/NewsContext";
+import { LuLoader2 } from "react-icons/lu";
 
 function Travles() {
   const { url, travles, setTravles } = useContext(newsContext);
@@ -30,7 +31,13 @@ function Travles() {
       <Header />
       <Nav head={"Travles"} />
       <br />
-      {loading ? <h1>Getting News...</h1> : <AllNews imageNews={imageNews} />}
+      {loading ? (
+        <span className="load">
+          <LuLoader2 size={50} className="loader" />
+        </span>
+      ) : (
+        <AllNews imageNews={imageNews} />
+      )}
     </div>
   );
 }

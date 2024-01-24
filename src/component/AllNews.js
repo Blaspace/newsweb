@@ -22,7 +22,7 @@ function AllNews({ imageNews }) {
               key={i}
             >
               <section>
-                <img src={value.img} alt="news" />
+                <img src={value.img} alt="news" loading="lazy" />
               </section>
               <p>{value?.text}</p>
             </div>

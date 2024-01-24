@@ -7,6 +7,22 @@
 body {
   overflow-x: clip;
 }
+.load {
+  text-align: center;
+  margin-top: 100px;
+  display: block;
+}
+.loader {
+  animation: load 500ms infinite;
+}
+@keyframes load {
+  from {
+    transform: rotate(0);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
 .header {
   display: flex;
   justify-content: center;
